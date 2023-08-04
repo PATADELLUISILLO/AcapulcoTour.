@@ -1,2 +1,2 @@
-# AcapulcoTour.
-Reservaciones en linea 
+# AcapulcoTour
+Reservaciones en linea

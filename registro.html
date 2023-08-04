@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Registro</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/css/jumbotron.css" rel="stylesheet">
+    <link href="bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" >
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Registro a AcapulcoTour</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">             
+          </ul>  
+          
+        </div>
+      </nav>
+    </header>
+
+
+    <main role="main">     
+      <hr>
+      <div class="container"> 
+
+        <div class="card">
+          <h4 class="card-header"><strong>Datos personales</strong></h4>              
+          <div class="card-body">
+            
+            <form action="" method="">              
+              <div class="row ">
+
+                <div class="col-lg-4"> 
+                  <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required="required">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label for="ApPaterno">Apellido Paterno</label>
+                    <input type="text" class="form-control" id="ApPaterno" name="ApPaterno" placeholder="Apellido Paternos" required="required">
+                  </div>
+                </div>
+                <div class="col-lg-4 ">  
+                  <div class="form-group">
+                    <label for="ApMaterno">Apellido Materno</label>
+                    <input type="text" class="form-control" id="ApMaterno" name="ApMaterno" placeholder="Apellido Materno " required="required">
+                  </div>
+                </div>
+
+                <div class="col-lg-4"> 
+                  <div class="form-group">
+                    <label for="Ubic"> Ubicación</label>
+                    <input type="text" class="form-control" id="Ubic" name="Ubic" placeholder="¿De donde eres?" required="required">
+                  </div> 
+                </div>    
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label for="correo">correo</label><br>
+                       <input name="correo" class="form-control" type="email" placeholder="correo" required/>
+                    </div>  
+                  </div> 
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label for="usuario">Nombre de usuario</label><br>
+                       <input name="usuario" class="form-control" type="text" placeholder="Usuario" required/>
+                    </div>
+                  </div>   
+                  <div class="col-lg-4">
+                    <div class="form-group ">
+                      <label for="password">Contraseña</label><br>
+                       <input name="password" class="form-control" type="password" placeholder="Contraseña" required/>
+                    </div>
+                  </div>
+              
+             
+                <div class="col"> 
+                  <div class="form-group">
+                    <label for="categoria">Mas solicitado</label>
+                    <select class="form-control" name="categoria" id="categoria">
+                      <option value="1">selecionara una de las opciones</option>
+                      <option value="2">Casa</option>
+                      <option value="3">Hotel</option>
+                    </select>
+                  </div>
+                </div>
+
+                
+                <div class="col"> 
+                  <div class="form-group">
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="text" class="form-control" name="fecha" id="fecha" placeholder="Fecha de nacimento" required="required">
+                  </div>  
+                </div>
+             
+
+             
+              </div> 
+              <li><a href="aviso.html">Aviso de privacidad</a>
+              <hr>
+              <a class="btn btn-outline-primary" href="index.html" name="enviar"> Enviar</a>  
+            </form>
+          </div>
+        </div>
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2022 Registro <a href="#">TeamBinario</a>
+          &middot; <a href="#">Terms</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>    
+    <script src="tinymce/tinymce.min.js"></script>
+    <script>
+      
+      $(function () {
+          $("#fecha").datepicker({dateFormat: 'dd-mm-yy'});
+        }
+      );
+      
+      /*
+      tinymce.init({
+          selector: '#detalles',
+          plugins: "textcolor, table lists code",
+          toolbar: " undo redo | bold italic | alignleft aligncenter alignright alignjustify \n\
+                    | bullist numlist outdent indent | forecolor backcolor table code"
+      });
+      
+      */
+      
+    </script>
+  </body>
+</html>
